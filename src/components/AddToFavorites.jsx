@@ -1,9 +1,9 @@
 
 
-const AddToFavorites = () => {
+const AddToFavorites = ({favButton}) => {
   return (
     <td>
-        <button>Add to Favorites</button>
+        <button onClick={favButton}>Add to Favorites</button>
     </td>
   )
 }

@@ -1,6 +1,6 @@
 
 
-const SpriteCell = ({image}) => {
+const SpriteFavorite = ({image}) => {
   return (
     <td>
         <img src={image} alt="Pokemon Image"/>
@@ -8,4 +8,4 @@ const SpriteCell = ({image}) => {
   )
 }
 
-export default SpriteCell
+export default SpriteFavorite

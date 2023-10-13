@@ -1,10 +1,14 @@
 
 
-const FavButtons = () => {
-  return (
+const FavButtons = ({isEditing, changeMode, deleteMode}) => {
+  return isEditing ? (
     <td>
-        <button>Edit</button>
-        <button>Delete</button>
+        <button onClick={changeMode}>Save</button>
+    </td>
+  ) : (
+    <td>
+      <button onClick={changeMode}>Edit</button>
+      <button onClick={deleteMode}>Delete</button>
     </td>
   )
 }

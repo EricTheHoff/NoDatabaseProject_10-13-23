@@ -1,9 +1,9 @@
 
 
-const ResultName = () => {
+const ResultName = ({pokemon}) => {
   return (
     <td>
-        Result
+        {pokemon}
     </td>
   )
 }
