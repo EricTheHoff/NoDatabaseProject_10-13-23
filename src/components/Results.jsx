@@ -1,10 +1,5 @@
-import SpriteCell from "./SpriteCell"
-import ResultName from "./ResultName"
-import AddToFavorites from "./AddToFavorites"
 import ResultsHeader from "./ResultsHeader"
 import ResultsRow from "./ResultsRow"
-import { useState } from "react"
-import axios from "axios"
 
 
 const Results = ({searchResult, setFavItem, favItem}) => {

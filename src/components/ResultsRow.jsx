@@ -1,7 +1,6 @@
 import AddToFavorites from "./AddToFavorites"
 import SpriteCell from "./SpriteCell"
 import ResultName from "./ResultName"
-import { useState } from "react"
 import axios from "axios"
 
 const ResultsRow = ({id, objectData, setFavItem, favItem}) => {
