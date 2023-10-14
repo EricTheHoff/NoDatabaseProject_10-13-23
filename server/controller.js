@@ -27,7 +27,7 @@ const handlerFunctions = {
         const {id} = req.params
 
         favorites = favorites.filter((pokemon) => pokemon.id !== +id)
-        res.send(favorites)
+        res.send(`Pokemon has been deleted`)
     }
 }
 

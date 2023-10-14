@@ -6,7 +6,7 @@ import { useState } from "react"
 import axios from "axios"
 
 
-const FavoritesRow = ({id, objectData, newFavorite, isEditing, deleteFunc}) => {
+const FavoritesRow = ({id, objectData, newFavorite, isEditing, deleteEntry}) => {
     const [editMode, setEditMode] = useState(isEditing)
     const [notes, setNotes] = useState("")
     
@@ -29,7 +29,7 @@ const FavoritesRow = ({id, objectData, newFavorite, isEditing, deleteFunc}) => {
         <FavButtons
         isEditing={editMode}
         changeMode={changeMode}
-        deleteMode={deleteFunc}
+        deleteMode={deleteEntry}
         />
         <SpriteFavorite
         image={img}

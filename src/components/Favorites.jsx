@@ -8,8 +8,8 @@ import FavoritesRow from "./FavoritesRow"
 import axios from "axios"
 
 
-const Favorites = ({newFavorite, favoriteArray}) => {
-  const [currentFavorites, setCurrentFavorites] = useState(favoriteArray)
+const Favorites = ({newFavorite, deleteEntry}) => {
+  // const [currentFavorites, setCurrentFavorites] = useState(favoriteArray)
 
   const favRows = newFavorite.map((favEntry) => {
     const {id, name, img, isEditing} = favEntry
@@ -21,7 +21,7 @@ const Favorites = ({newFavorite, favoriteArray}) => {
         objectData={{name, img}}
         newFavorite={newFavorite}
         isEditing={isEditing}
-        deleteFunc={() => deleteFunc(id)}
+        deleteEntry={deleteEntry}
       />
     )
   })
