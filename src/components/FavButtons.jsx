@@ -1,6 +1,6 @@
 
 
-const FavButtons = ({isEditing, changeMode, deleteMode}) => {
+const FavButtons = ({isEditing, changeMode, deleteMode, id}) => {
   return isEditing ? (
     <td>
         <button onClick={changeMode}>Save</button>
@@ -8,7 +8,7 @@ const FavButtons = ({isEditing, changeMode, deleteMode}) => {
   ) : (
     <td>
       <button onClick={changeMode}>Edit</button>
-      <button onClick={deleteMode}>Delete</button>
+      <button onClick={() => deleteMode(id)}>Delete</button>
     </td>
   )
 }

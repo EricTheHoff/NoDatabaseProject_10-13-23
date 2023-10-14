@@ -30,6 +30,7 @@ const FavoritesRow = ({id, objectData, newFavorite, isEditing, deleteEntry}) => 
         isEditing={editMode}
         changeMode={changeMode}
         deleteMode={deleteEntry}
+        id={id}
         />
         <SpriteFavorite
         image={img}

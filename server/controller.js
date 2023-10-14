@@ -25,9 +25,15 @@ const handlerFunctions = {
     getFavorites: (req, res) => res.send(favorites),
     deletePokemon: (req, res) => {
         const {id} = req.params
+        console.log(id)
 
-        favorites = favorites.filter((pokemon) => pokemon.id !== +id)
+        favorites = favorites.filter((pokemon) => {
+            console.log(favorites)
+            return pokemon.id !== +id})
+        
+        console.log(favorites)
         res.send(`Pokemon has been deleted`)
+
     }
 }
 

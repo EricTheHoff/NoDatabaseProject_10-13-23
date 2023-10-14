@@ -7,15 +7,15 @@ const SearchBar = ({favoriteArray}) => {
     const [search, setSearch] = useState("search here...")
     const [foundObj, setFoundObj] = useState({})
     const [favItem, setFavItem] = useState(favoriteArray)
-    console.log(`FavArray is currently: ${favoriteArray}`)
 
     const deleteFunc = async (pokemonId) => {
         const response = await axios.delete(`/deletePokemon/${pokemonId}`)
-        console.log(response.data)
+        // console.log(response.data)
     
         if (!response.data.error) {
-          const updatedPokemon = favItem.filter((pokemon) => pokemon.id !== pokemonId)
-          setFavItem(updatedPokemon)
+          const favoriteResponse = await axios.get('/favoritePokemon')
+          setFavItem(favoriteResponse.data)
+          // console.log(favoriteResponse.data)
         }
       }
 
