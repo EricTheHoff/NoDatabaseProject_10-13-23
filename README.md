@@ -10,8 +10,7 @@ API used for this project:
 
 This application supports the following features:
 - Search bar for Pokemon
-- Results and Favorites Tables
 - "Add to Favorites" feature
-- Note-adding capabilities
-- Favorites Table customization
+- Note-adding capabilities on your Favorites.
+- Ability to remove entries from your Favorites.
 

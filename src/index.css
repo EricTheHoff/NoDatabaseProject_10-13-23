@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: linear-gradient(180deg, rgba(42, 117, 187), rgba(255, 203, 5));
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,12 +43,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgba(60, 90, 166);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: rgba(255, 203, 5);
 }
 button:focus,
 button:focus-visible {
@@ -66,4 +66,12 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#results-table {
+  float: left;
+}
+
+#favorites-table {
+  float: right;
 }
